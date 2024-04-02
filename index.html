@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+
+<head>
+
+
+	<meta charset="utf-8">
+	<title>Portfolio Léa Venturoli</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/vendor.css">
+
+
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+
+			emailjs.init('nQeT2fppl-ZtsO2VV');
+		})();
+	</script>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById('contactForm').addEventListener('submit', function (event) {
+				event.preventDefault();
+
+				this.contact_number.value = Math.random() * 100000 | 0;
+
+
+				var formData = {
+					contactName: this.contactName.value,
+					contactEmail: this.contactEmail.value,
+					contactSubject: this.contactSubject.value,
+					message: this.contactMessage.value
+				};
+
+				emailjs.send('contact_service', 'contact_form', formData)
+					.then(function () {
+
+						console.log('SUCCESS!');
+
+					}, function (error) {
+
+						console.log('FAILED...', error);
+					});
+			});
+		}
+	</script>
+
+
+	<link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+
+
+	<header>
+		<div class="row">
+
+			<div class="top-bar">
+				<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+				<div class="logo">
+					<a href="#">Menu</a>
+				</div>
+
+				<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll" href="#intro" title="">Accueil</a></li>
+						<li><a class="smoothscroll" href="#about" title="">A propos</a></li>
+						<li><a class="smoothscroll" href="#resume" title="">Expériences</a></li>
+						<li><a class="smoothscroll" href="#portfolio" title="">Projets</a></li>
+						<li><a class="smoothscroll" href="#services" title="">Veille technologique</a></li>
+						<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+
+	<section id="intro">
+
+		<div class="intro-overlay"></div>
+
+		<div class="intro-content">
+			<div class="row">
+
+				<div class="col-twelve">
+
+					<h5>Bonjour.</h5>
+					<h1>Je suis Léa Venturoli.</h1>
+
+					<p class="intro-position">
+						<span>Etudiante en BTS SIO option SLAM</span>
+						<span>Alternante</span>
+					</p>
+
+					<a class="button stroke smoothscroll" href="#about" title="">A propos de moi</a>
+
+
+				</div>
+			</div>
+
+
+
+			<ul class="intro-social">
+				<li><a
+						href="https://fr.linkedin.com/in/l%C3%A9a-venturoli-448263211?trk=people-guest_people_search-card"><i
+							class="fa fa-linkedin"></i></a></li>
+				<li><a href="https://github.com/LeaVenturoli/Portfolio"><i class="fa fa-github"></i></a></li>
+			</ul>
+
+	</section>
+
+
+
+	<section id="about">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>A propos</h5>
+				<h1>Laissez moi me présenter.</h1></br>
+				<a href="images/Tableau de synthèse - Venturoli Léa.pdf" class="button button-primary"
+					target="_blank">Tableau de synthèse</a>
+				<div class="intro-info">
+
+					<img src="images/profile-pic.jpg" alt="Photo de profil">
+
+					<p class="lead">Passionnée depuis plusieurs années par le
+						domaine informatique et son environnement
+						en général. J’ai compris après réflexion que
+						cela était plus qu’un loisir ou une passion
+						mais l’envie réelle d’en faire mon métier.</p>
+
+
+				</div>
+			</div>
+
+		</div>
+		</div>
+
+		<div class="row about-content">
+
+			<div class="col-six tab-full">
+
+				<h3>Centre d'intéret</h3>
+				<ul>Militante Associatif ( Association Myosotis / Enfants hospitalisés )</ul>
+				<ul>Jeux Vidéo</ul>
+				<ul>Photographie</ul>
+
+				<ul class="info-list">
+					<li>
+						<strong>Nom:</strong>
+						<span>Venturoli</span>
+					</li>
+					<li>
+						<strong>Prénom:</strong>
+						<span>Léa</span>
+					</li>
+					<li>
+						<strong>Date de naissance:</strong>
+						<span>9 Juin 1998</span>
+					</li>
+					<li>
+						<strong>Numéro de téléphone:</strong>
+						<span>07.77.70.73.35</span>
+					</li>
+					<li>
+						<strong>Email:</strong>
+						<span>leaventuroli@gmail.com</span>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div class="col-six tab-full">
+
+				<h3>Compétences</h3>
+
+				<ul class="skill-bars">
+					<li>
+						<div class="progress percent50"><span>50%</span></div>
+						<strong>HTML</strong>
+					</li>
+					<li>
+						<div class="progress percent30"><span>30%</span></div>
+						<strong>Python</strong>
+					</li>
+					<li>
+						<div class="progress percent30"><span>30%</span></div>
+						<strong>PHP</strong>
+					</li>
+					<li>
+						<div class="progress percent90"><span>90%</span></div>
+						<strong>Accueil téléphonique</strong>
+					</li>
+					<li>
+						<div class="progress percent90"><span>90%</span></div>
+						<strong>Outils bureautiques</strong>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div>
+				<h3>La suite ?</h3>
+
+				<p>Après mon BTS, je souhaite poursuivre avec un Bachelor en Ressources Humaines. Mon but final, étant
+					d'ouvrir ma propre entreprise
+					plus tard, et ce bachelor, m'offrirait les clés pour y parvenir. Il constitue ainsi une étape
+					importante dans la réalisation de mon projet professionnel.</p>
+			</div>
+
+		</div>
+
+		<div class="row button-section">
+			<div class="col-twelve">
+				<a href="images/CV_Lea_Venturoli.pdf" title="Download CV" class="button button-primary"
+					target="_blank">Télécharger le CV</a>
+			</div>
+		</div>
+
+
+	</section>
+
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Expériences</h5>
+				<h1>Plus d'information.</h1>
+
+			</div>
+		</div>
+
+		<div class="row resume-timeline">
+
+			<div class="col-twelve resume-header">
+
+				<h2>Expériences professionnelles</h2>
+
+			</div>
+
+			<div class="col-twelve">
+
+				<div class="timeline-wrap">
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Alternante Service Desk</h3>
+							<p>Septembre 2023 - Aujourd'hui</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Alliance Automotive</h4>
+							<p>Levallois-Perret</p>
+						</div>
+
+					</div>
+
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Stage en développement</h3>
+							<p>Avril 2023 - Mai 2023</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>NLV Maçonnerie</h4>
+							<p>Plédran</p>
+						</div>
+
+					</div>
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Employée polyvalente</h3>
+							<p>Mai 2021 - Juillet 2021</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>LIDL</h4>
+							<p>Saint-Alban</p>
+
+						</div>
+
+					</div>
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Aidant Familial</h3>
+							<p>2019 - 2020</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4></h4>
+							<p>Saint-Alban</p>
+
+						</div>
+
+					</div>
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Programmatrice CPA</h3>
+							<p>Aout 2018 - Décembre 2018</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4> ENEDIS</h4>
+							<p>Le Chesnay</p>
+
+						</div>
+
+					</div>
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Appui au management</h3>
+							<p>Juillet 2018</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Maxi Toys</h4>
+							<p>Garges-lès-Gonesse</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="row resume-timeline">
+
+			<div class="col-twelve resume-header">
+
+				<h2>Diplômes et Formations</h2>
+
+			</div>
+
+			<div class="col-twelve">
+
+				<div class="timeline-wrap">
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>BTS SIO Option SLAM</h3>
+							<p>Octobre 2022 - Juin 2024</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>H3Hitema </h4>
+							<p>Issy-les-Moulineaux</p>
+						</div>
+
+					</div>
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>L1 de psychologie</h3>
+							<p>Septembre 2020 - Avril 2021</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>UBO</h4>
+							<p>Brest</p>
+						</div>
+
+					</div>
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>BTS Electrotechnique</h3>
+							<p>2017 - 2018</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Aforp</h4>
+							<p>Issy-les-Moulineaux</p>
+						</div>
+
+					</div>
+
+					<div class="timeline-block">
+
+						<div class="timeline-ico">
+							<i class="fa fa-briefcase"></i>
+						</div>
+
+						<div class="timeline-header">
+							<h3>Baccalauréat STI2D Option SIN </h3>
+							<p>Septembre 2016 - Juin 2017</p>
+						</div>
+
+						<div class="timeline-content">
+							<h4>Lycée Ozanam</h4>
+							<p>Cesson-Sévigné</p>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<section id="portfolio">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Projets</h5>
+				<h1>Projets majeurs.</h1>
+
+				<p class="lead">Voici les deux projets effectués au cours de cette deuxième année de bts.</p>
+
+			</div>
+		</div>
+
+		<div class="row portfolio-content">
+
+			<div class="col-twelve">
+
+
+				<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/liberty.png" alt="Liberty">
+							<a href="#modal-01" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Booky</h3>
+										<span class="folio-types">
+											Application Web
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/mobile.png" alt="Shutterbug">
+							<a href="#modal-02" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Booky</h3>
+										<span class="folio-types">
+											Application mobile
+										</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+
+					<div id="modal-01" class="popup-modal slider mfp-hide">
+
+						<div class="media">
+							<img src="images/portfolio/modals/m-liberty.png" alt="" />
+						</div>
+
+						<div class="description-box">
+							<h4>Booky</h4>
+							<p>Le but de ce site est d'éviter de racheter plusieurs fois un livre. En effet, il est
+								courant d'oublier que l'on possède déjà un livre que l'on souhaite lire. La bibliothèque
+								virtuelle permettra aux utilisateurs de garder une trace de leurs prêts.</p>
+
+							<div class="categories">Application Web</div>
+						</div>
+
+						<div class="link-box">
+							<a href="images/Projet_Booky-Lea_Venturoli.pdf" target="_blank">Détails</a>
+							<a href="#" class="popup-modal-dismiss">Fermer</a>
+						</div>
+
+					</div>
+
+					<div id="modal-02" class="popup-modal slider mfp-hide">
+
+						<div class="media">
+							<img src="images/portfolio/mobile.png" alt="" />
+						</div>
+
+						<div class="description-box">
+							<h4>Booky</h4>
+							<p>Le but de cette application mobile et d'évité les achats redondants de livres en vous
+								permettant de garder une
+								trace de votre collection. Avec notre fonction de scanner, ajoutez rapidement des livres
+								et suivez
+								vos prêts.</p>
+
+							<div class="categories">Application mobile</div>
+						</div>
+
+						<div class="link-box">
+							<a href="http://www.behance.net">Détails</a>
+							<a href="#" class="popup-modal-dismiss">Fermer</a>
+						</div>
+
+					</div> /modal-02
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+	<section id="cta" class="grey-section">
+
+		<div class="row cta-content">
+
+			<div class="col-twelve section-ads">
+
+				<h2 class="h01">“N'importe quel idiot peut écrire du code qu'un ordinateur peut comprendre. Les bons
+					programmeurs écrivent du code que les humains peuvent comprendre.”</h2>
+
+				<p class="lead">
+					Martin Fowler
+				</p>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Veille technologique</h5>
+				<h1>L'IA dans le monde médical</h1>
+				<p>Est-ce que le but ultime n'est pas de réussir un jour à mourir en bonne santé ? </br> Il me semble 
+					important que la médecine fasse des progrès pour atténuer la souffrance des malades. 
+					L'idée que tous corps abîmés puissent être réparés, </br> une utopie ? </br>Cette veille technologique 
+					me permet de voir que chaque jour la médecine progresse dans toutes les spécialités médicales. </p>
+				<p><span style="color: white; font-weight: bold;">J'ai fait cette veille technologique en mettant en
+						place des flux RSS avec Google Alertes qui m'envoie des alertes tous les jours et en
+						m'inscrivant à des newsletters sur Feedly.</span></p>
+				<p class="lead"></p>
+
+			</div>
+		</div>
+
+		<div class="row services-content">
+
+			<div id="owl-slider" class="owl-carousel services-list">
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-window"></i></span>
+
+					<div class="service-content">
+
+						<h3><a href="https://trustmyscience.com/outil-ia-permet-identifier-risque-infarctus-10-ans-avance/"
+								style="color: white">Trust My Science</a></h3>
+
+						<p class="desc">Une nouvelle IA permet d’identifier un risque d’infarctus jusqu’à 10 ans à
+							l’avance.</p>
+
+					</div>
+
+				</div>
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-window"></i></span>
+
+					<div class="service-content">
+
+						<h3><a href="https://trustmyscience.com/crispr-modification-genetique-des-cellules-tests-sur-l-homme/"
+								style="color: white">Trust My Science</a></h3>
+
+						<p class="desc">Le système CRISPR modifiant génétiquement des cellules a été testé pour la
+							première fois sur l’homme.</p>
+
+					</div>
+
+				</div>
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-window"></i></span>
+
+					<div class="service-content">
+
+						<h3><a href="https://trustmyscience.com/essai-clinique-montre-cellules-immunitaires-genetiquement-modifiees-sont-sans-danger/"
+								style="color: white">Trust My Science</a></h3>
+
+						<p class="desc">CANCER. Un essai clinique suggère que l’édition génétique CRISPR pourrait être
+							un traitement viable.
+						</p>
+
+					</div>
+
+				</div>
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-earth"></i></span>
+
+					<div class="service-content">
+
+						<h3><a href="https://www.ticsante.com/story?ID=6955" style="color: white">Tic Santé</a></h3>
+
+						<p class="desc">IA en imagerie médicale: Incepto s'allie à Keymaging.</p>
+
+					</div>
+
+				</div>
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-earth"></i></span>
+
+					<div class="service-content">
+
+						<h3><a href="https://www.ticsante.com/story?ID=6950" style="color: white">Tic Santé</a></h3>
+
+						<p class="desc">L'Académie de médecine invite les rythmologues à se former mieux et plus vite à
+							la maîtrise de l'intelligence artificielle.</p>
+
+					</div>
+
+				</div>
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-earth"></i></span>
+
+					<div class="service-content">
+
+						<h3><a href="https://www.ticsante.com/story?ID=6869" style="color: white">Tic Santé</a></h3>
+
+						<p class="desc">Chirurgie bariatrique: le CHU de Lille et l'Inria dévoilent un outil d'IA pour
+							calculer la perte de poids à long terme.</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</section>
+
+
+
+	<section id="stats" class="count-up">
+
+		<div class="row">
+			<div class="col-twelve">
+
+				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-pencil-ruler"></i>
+						</div>
+
+						<h3 class="stat-count">
+							2
+						</h3>
+
+						<h5 class="stat-title">
+							Projets terminés
+						</h5>
+
+					</div>
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-users"></i>
+						</div>
+
+						<h3 class="stat-count">
+							2
+						</h3>
+
+						<h5 class="stat-title">
+							Clients contents
+						</h5>
+
+					</div>
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-badge"></i>
+						</div>
+
+						<h3 class="stat-count">
+							10000
+						</h3>
+
+						<h5 class="stat-title">
+							Rires
+						</h5>
+
+					</div>
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-light-bulb"></i>
+						</div>
+
+						<h3 class="stat-count">
+							120
+						</h3>
+
+						<h5 class="stat-title">
+							Idées folles
+						</h5>
+
+					</div>
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-cup"></i>
+						</div>
+
+						<h3 class="stat-count">
+							3000
+						</h3>
+
+						<h5 class="stat-title">
+							Verres d'ice tea
+						</h5>
+
+					</div>
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-clock"></i>
+						</div>
+
+						<h3 class="stat-count">
+							1500
+						</h3>
+
+						<h5 class="stat-title">
+							Heures
+						</h5>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<section id="contact">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Contact</h5>
+				<h1>Que puis je faire pour vous ? </h1>
+
+				<p class="lead"></p>
+
+			</div>
+		</div>
+
+		<div class="row contact-form">
+
+			<div class="col-twelve">
+
+
+				<form name="contactForm" id="contactForm" method="post">
+					<fieldset>
+						<div class="form-field">
+							<input name="contact_number" type="hidden">
+							<input name="user_name" type="text" id="contactName" placeholder="Name" value=""
+								minlength="2" required="">
+						</div>
+						<div class="form-field">
+							<input name="user_email" type="email" id="contactEmail" placeholder="Email" value=""
+								required="">
+						</div>
+						<div class="form-field">
+							<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+						</div>
+						<div class="form-field">
+							<textarea name="message" id="contactMessage" placeholder="Message" rows="10" cols="50"
+								required=""></textarea>
+						</div>
+						<div class="form-field">
+							<button type="submit" class="submitform">Submit</button>
+							<div id="submit-loader">
+								<div class="text-loader">Sending...</div>
+								<div class="s-loader">
+									<div class="bounce1"></div>
+									<div class="bounce2"></div>
+									<div class="bounce3"></div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+				<div id="message-warning"></div>
+
+
+				<div id="message-success">
+					<i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row contact-info">
+
+			<div class="col-four tab-full">
+
+				<div class="icon">
+					<i class="icon-pin"></i>
+				</div>
+
+				<h5>Ou me trouver ?</h5>
+
+				<p>
+					88 bd Galliéni<br>
+					Issy les Moulineaux<br>
+					92130
+				</p>
+
+			</div>
+
+			<div class="col-four tab-full collapse">
+
+				<div class="icon">
+					<i class="icon-mail"></i>
+				</div>
+
+				<h5>Email</h5>
+
+				<p>leaventu@gmail.com
+				</p>
+
+			</div>
+
+			<div class="col-four tab-full">
+
+				<div class="icon">
+					<i class="icon-phone"></i>
+				</div>
+
+				<h5>téléphone</h5>
+
+				<p>
+					Mobile: 07.77.70.73.35
+				</p>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<footer>
+		<div class="row">
+
+			<div class="col-six tab-full pull-right social">
+
+				<ul class="footer-social">
+					<li><a
+							href="https://fr.linkedin.com/in/l%C3%A9a-venturoli-448263211?trk=people-guest_people_search-card"><i
+								class="fa fa-linkedin"></i></a></li>
+					<li><a href="https://github.com/LeaVenturoli/Portfolio"><i class="fa fa-github"></i></a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-eight tab-full">
+				<div class="copyright">
+					<span>© Copyright 2023 </span>
+					<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
+					<span>Distributed by <a href="https://themewagon.com/">themewagon</a></span>
+				</div>
+			</div>
+
+			<div id="go-top">
+				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+			</div>
+
+		</div>
+	</footer>
+
+	<div id="preloader">
+		<div id="loader"></div>
+	</div>
+
+
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
